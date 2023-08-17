@@ -5,7 +5,7 @@ body {
   overflow-x: hidden;
 }
 
-ol, ul {
+ol, ul, li {
   list-style: none;
 }
 
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-color {
-  background-color: RGBA(0, 0, 0, 0.21);
+  background-color: RGBA(0, 0, 0, 0.31);
 }
 
 .nav>li>a {
@@ -147,9 +147,9 @@ button {
   font-size: 18px;
   text-transform: uppercase;
   border: 2px solid #FFD34E;
-  background: #ffd34e66;
+  background: #a1ff4e66;
   font-weight: normal;
-  border-radius: 0px;
+  border-radius: 15px 2px;
   transition: 31ms cubic-bezier(.5, .7, .4, 1);
   margin-top: 25px;
 }
@@ -270,11 +270,11 @@ button:hover i:nth-child(10) {
 
 .cta-info {
   border: 5px solid #FFD34E;
-  padding: 40px 0px;
+  padding: 20px 0px;
 }
 
 .cta-info h3 {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .dec-tec {
@@ -363,7 +363,7 @@ h3.txt-tl {
 
 .img-responsive{
   border: solid 1px #000;
-  border-radius: 5%;
+  border-radius: 15px 2px;
   aspect-ratio: 1.6;
 }
 
@@ -375,6 +375,13 @@ h3.txt-tl {
               -6px -6px 5px #ffffff;
 }
 
+.icons__languages{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+}
 /* .social__networks{
   text-align: center;
   position: relative;
