@@ -315,7 +315,8 @@ button:hover i:nth-child(10) {
 }
 
 p {
-  color: #888;
+  color: #6a6a6a;
+  font-size: 20px;
 }
 
 .icon {
