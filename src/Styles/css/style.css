@@ -37,12 +37,17 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
 }
 
-.main-header {
+/* .main-header {
   background: url(/NICOLAS/portfolio2023/src/banner.jpeg) no-repeat fixed;
   background-size: cover;
   min-height: 610px;
-}
+} */
 
+.bg-imag{
+  height: 100vh;
+  width: 230vh;
+  position: absolute;
+}
 .bg-color {
   background-color: RGBA(0, 0, 0, 0.31);
 }
