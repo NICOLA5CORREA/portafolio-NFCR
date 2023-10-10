@@ -371,6 +371,48 @@ h3.txt-tl {
   border-radius: 15px 2px;
   aspect-ratio: 1.6;
 }
+.port01{
+  background: url(/portfolio2023/public/images/port01.jpg.png);
+  background-size: cover;
+  border: solid 1px #000;
+  border-radius: 15px 2px;
+  aspect-ratio: 1.6
+}
+.port02{
+  background: url(/portfolio2023/public/images/port02.jpg.png);
+  background-size: cover;
+  border: solid 1px #000;
+  border-radius: 15px 2px;
+  aspect-ratio: 1.6
+}
+.port03{
+  background: url(/portfolio2023/public/images/port03.jpg.png);
+  background-size: cover;
+  border: solid 1px #000;
+  border-radius: 15px 2px;
+  aspect-ratio: 1.6
+}
+.port04{
+  background: url(/portfolio2023/public/images/port04.jpg.png);
+  background-size: cover;
+  border: solid 1px #000;
+  border-radius: 15px 2px;
+  aspect-ratio: 1.6
+}
+.port05{
+  background: url(/portfolio2023/public/images/port05.jpg.png);
+  background-size: cover;
+  border: solid 1px #000;
+  border-radius: 15px 2px;
+  aspect-ratio: 1.6
+}
+.port06{
+  background: url(/portfolio2023/public/images/port06.jpg.png);
+  background-size: cover;
+  border: solid 1px #000;
+  border-radius: 15px 2px;
+  aspect-ratio: 1.6
+}
 
 .img-responsive:hover{
   transform: scale(1.02);
@@ -380,6 +422,8 @@ h3.txt-tl {
               -6px -6px 5px #ffffff;
 }
 
+
+
 .icons__languages{
   display: flex;
   flex-wrap: wrap;
@@ -387,12 +431,7 @@ h3.txt-tl {
   justify-content: center;
   gap: 10px
 }
-/* .social__networks{
-  text-align: center;
-  position: relative;
-  left: 380px;
-  top: -70px;
-} */
+
 .section {
   position: relative;
   padding: 88px 0 67px 0;
