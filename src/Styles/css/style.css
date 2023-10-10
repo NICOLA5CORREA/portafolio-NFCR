@@ -355,7 +355,7 @@ h3.txt-tl {
 }
 
 .bg-image-2 {
-  background: url(/portfolio2023/public/images/cta-banner.JPG) no-repeat center fixed;
+  background-image: url(/portfolio2023/public/images/cta-banner.JPG) fixed;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
@@ -372,46 +372,34 @@ h3.txt-tl {
   aspect-ratio: 1.6;
 }
 .port01{
-  background: url(/portfolio2023/public/images/port01.jpg.png);
+  background-image: url(/portfolio2023/public/images/port01.jpg.png);
   background-size: cover;
-  border: solid 1px #000;
   border-radius: 15px 2px;
-  aspect-ratio: 1.6
 }
 .port02{
-  background: url(/portfolio2023/public/images/port02.jpg.png);
+  background-image: url(/portfolio2023/public/images/port02.jpg.png);
   background-size: cover;
-  border: solid 1px #000;
   border-radius: 15px 2px;
-  aspect-ratio: 1.6
 }
 .port03{
-  background: url(/portfolio2023/public/images/port03.jpg.png);
+  background-image: url(/portfolio2023/public/images/port03.jpg.png);
   background-size: cover;
-  border: solid 1px #000;
   border-radius: 15px 2px;
-  aspect-ratio: 1.6
 }
 .port04{
-  background: url(/portfolio2023/public/images/port04.jpg.png);
+  background-image: url(/portfolio2023/public/images/port04.jpg.png);
   background-size: cover;
-  border: solid 1px #000;
   border-radius: 15px 2px;
-  aspect-ratio: 1.6
 }
 .port05{
-  background: url(/portfolio2023/public/images/port05.jpg.png);
+  background-image: url(/portfolio2023/public/images/port05.jpg.png);
   background-size: cover;
-  border: solid 1px #000;
   border-radius: 15px 2px;
-  aspect-ratio: 1.6
 }
 .port06{
-  background: url(/portfolio2023/public/images/port06.jpg.png);
+  background-image: url(/portfolio2023/public/images/port06.jpg.png);
   background-size: cover;
-  border: solid 1px #000;
   border-radius: 15px 2px;
-  aspect-ratio: 1.6
 }
 
 .img-responsive:hover{
