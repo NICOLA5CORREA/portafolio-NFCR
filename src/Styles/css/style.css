@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-header {
   background-image: url(../../../public/images/banner.jpeg);
   background-size: cover;
+  background-position: 20px 30px;
   min-height: 610px;
 }
 
@@ -89,6 +90,9 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-fixed-top {
   padding: 40px 0;
   transition: all 0.5s;
+}
+.scrolled{
+  background-color: #191919;
 }
 
 @media (max-width: 768px) {
@@ -371,35 +375,98 @@ h3.txt-tl {
   border-radius: 15px 2px;
   aspect-ratio: 1.6;
 }
+
+/* nuevo */
+.card {
+  /* position: absolute; */
+  width: 250px;
+  height: 170px;
+  background-color: #f2f2f2af;
+  border-radius: 15px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 5px -5px 15px 5px #514d4d88;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+  width: 60px;
+  position: absolute;
+  left:60%;
+  top: 65%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.537);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #eaf6ff;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+  cursor: pointer;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #101010;
+  font-weight: 700;
+}
+
+.card:hover img {
+  scale: 1.2;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* */ 
+
+
 .port01{
   background-image: url(../../../public/images/port01.jpg.png);
   background-size: cover;
-  border-radius: 15px 2px;
 }
 .port02{
   background-image: url(../../../public/images/port02.jpg.png);
   background-size: cover;
-  border-radius: 15px 2px;
 }
 .port03{
   background-image: url(../../../public/images/port03.jpg.png);
   background-size: cover;
-  border-radius: 15px 2px;
 }
 .port04{
   background-image: url(../../../public/images/port04.jpg.png);
   background-size: cover;
-  border-radius: 15px 2px;
 }
 .port05{
   background-image: url(../../../public/images/port05.jpg.png);
   background-size: cover;
-  border-radius: 15px 2px;
 }
 .port06{
   background-image: url(../../../public/images/port06.jpg.png);
   background-size: cover;
-  border-radius: 15px 2px;
 }
 
 .img-responsive:hover{
@@ -409,7 +476,6 @@ h3.txt-tl {
   box-shadow:  6px 6px 5px #cecccc,
               -6px -6px 5px #ffffff;
 }
-
 
 
 .icons__languages{
@@ -422,7 +488,7 @@ h3.txt-tl {
 
 .section {
   position: relative;
-  padding: 88px 0 67px 0;
+  padding: 135px 0 67px 42px;
   display: block;
 }
 
