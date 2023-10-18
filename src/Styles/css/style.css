@@ -647,7 +647,6 @@ navbar-brand, a, a:hover {
 }
 
 .footer-social {
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -655,9 +654,19 @@ navbar-brand, a, a:hover {
   left: 60%
 }
 
+.footer__title {
+  color: rgb(176, 176, 176);
+}
+
+.social__networks {
+  color: rgb(176, 176, 176);
+  padding: 0.5em 0.5em;
+}
+
 .footer-social a {
   font-size: 18px;
-  color: #666;
+  padding: 0.5em 0.5em;
+  color: rgb(176, 176, 176);
 }
 
 .link-dec, .link-dec:hover {
