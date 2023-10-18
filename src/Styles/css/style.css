@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .top-title {
   z-index: 5;
-  font-size: 27px;
+  font-size: 35px;
   font-weight: 700;
   color: #4fb9b6;
   line-height: 38px;
@@ -685,7 +685,7 @@ navbar-brand, a, a:hover {
   }
 
   .top-title {
-    font-size: 15px;
+    font-size: 40px;
   }
   .title {
     font-size: 50px;
