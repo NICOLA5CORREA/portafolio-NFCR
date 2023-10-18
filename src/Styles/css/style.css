@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 90px 0px 130px;
 }
 
-.top-title {
+.typewrite {
   z-index: 5;
   font-size: 35px;
   font-weight: 700;
@@ -684,7 +684,7 @@ navbar-brand, a, a:hover {
     text-align: center;
   }
 
-  .top-title {
+  .typewrite {
     font-size: 40px;
   }
   .title {
