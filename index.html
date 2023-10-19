@@ -3,10 +3,10 @@
 
 <head><meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image" href="./src/assets/wired-lineal-478-computer-display.svg" />
+  <link rel="icon" href="./src/assets/wired-lineal-478-computer-display.svg" />
   <title>🙋‍♂️ I'M NICOLAS CORREA 🛫</title>
   <!-- <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com"> -->
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300/Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="./src/Styles/css/bootstrap.min.css">
@@ -27,7 +27,7 @@
           <div class="col-md-12">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar"
-                aria-expanded="false" aria-controls="navbar">
+                aria-expanded="false">
                 <span class="fa fa-bars"></span>
               </button>
               <a href="index.html" class="navbar-brand">NICOLAS CORREA</a>
@@ -46,7 +46,7 @@
       <!--/ nav-->
       <div class="container text-center">
         <div class="wrapper wow fadeInUp delay-05s">
-          <h2 class="">
+          <h2 class="typewrite">
             <a href="" class="typewrite" data-period="2000" data-type='[ "Hello world.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
               <span class="wrap"></span>
             </a>
@@ -55,21 +55,21 @@
           <h4 class="sub-title">Creating amazing designs</h4>
           <a href="https://drive.google.com/file/d/14W_sp4boNgEXfLsB0sax0yB-6fG94HRW/view?usp=drive_link" target="_blank" download>
             <button type="submit">
-              <i>d</i>
-              <i>o</i>
-              <i>w</i>
-              <i>n</i>
-              <i>l</i>
-              <i>o</i>
-              <i>a</i>
-              <i>d</i>
-              <i>&nbsp;</i>
-              <i>m</i>
-              <i>y</i>
-              <i>&nbsp;</i>
-              <i>c</i>
-              <i>v</i>
-            </button></a>
+            <i>d</i>
+            <i>o</i>
+            <i>w</i>
+            <i>n</i>
+            <i>l</i>
+            <i>o</i>
+            <i>a</i>
+            <i>d</i>
+            <i>&nbsp;</i>
+            <i>m</i>
+            <i>y</i>
+            <i>&nbsp;</i>
+            <i>c</i>
+            <i>v</i>
+          </button></a>
         </div>
       </div>
     </div>
@@ -213,14 +213,13 @@
             <h2 class="head-title">Portfolio</h2>
             <hr class="botm-line">
             <p class="sec-para">On this section you could find some of my best jobs on websites, where I show a little
-              domain of:
-            <div class="icons__languages">
+              domain of:</p>
+            <ul class="icons__languages">
                 <li><i class='bx bxl-html5 bx-fade-left bx-flip-horizontal bx-lg' style='color:#c85017'></i></li>
                 <li><i class='bx bxl-javascript bx-burst bx-flip-horizontal bx-lg' style='color:#c8ac17'></i></li>
                 <li><i class='bx bxl-css3 bx-flip-horizontal bx-tada bx-lg' style='color:#1742c8'></i></li>
                 <li> <i class='bx bxl-react bx-spin bx-flip-horizontal bx-lg' style='color:#13c5cc'></i></li>
-            </div>
-            </p>
+            </ul>
           </div>
         </div>
         
@@ -331,7 +330,7 @@
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
             <div class="contact-info">
-              <form action="procesar_formulario.php" method="post" role="form" class="contactForm">
+              <form action="procesar_formulario.php" method="post" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
                     data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
