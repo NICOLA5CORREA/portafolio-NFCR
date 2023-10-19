@@ -325,7 +325,7 @@ button:hover i:nth-child(10) {
 
 p {
   color: #6a6a6a;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .icon {
@@ -379,10 +379,8 @@ h3.txt-tl {
 
 /* nuevo */
 .card {
-  /* position: absolute; */
-  width: 250px;
-  height: 170px;
-  background-color: #f2f2f2af;
+  width: 350px;
+  height: 220px;
   border-radius: 15px 2px;
   display: flex;
   align-items: center;
@@ -394,10 +392,10 @@ h3.txt-tl {
 }
 
 .card img {
-  width: 60px;
+  width: 85px;
   position: absolute;
   left:60%;
-  top: 65%;
+  top: 60%;
 }
 
 .card:hover {
@@ -414,19 +412,18 @@ h3.txt-tl {
   padding: 20px;
   box-sizing: border-box;
   background-color: #eaf6ff;
-  transform: rotateX(-90deg);
-  transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+  transition: opacity 0.8s ease 0s;
 }
 
 .card:hover .card__content {
-  transform: rotateX(0deg);
   cursor: pointer;
+  opacity: 1;
 }
 
 .card__title {
   margin: 0;
-  font-size: 24px;
+  font-size: 25px;
   color: #101010;
   font-weight: 700;
 }
@@ -437,7 +434,7 @@ h3.txt-tl {
 
 .card__description {
   margin: 10px 0 0;
-  font-size: 14px;
+  font-size: 18px;
   color: #333;
   line-height: 1.4;
 }
@@ -484,7 +481,8 @@ h3.txt-tl {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 10px
+  gap: 10px;
+  padding: 20px 0px
 }
 
 .section {
