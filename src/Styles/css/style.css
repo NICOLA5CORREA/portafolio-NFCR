@@ -622,15 +622,15 @@ navbar-brand, a, a:hover {
 #footer {
   background-color: #191919;
   padding: 20px 0px;
-  height: 165px;
+  height: 180px;
 }
 
 .footer__cont{
   padding: 0.5em;
   display: flex;
   position: relative;
-  top: -25px;
-  left: 35px;
+  top: -17px;
+  left: 45px;
 }
 
 .footer__list{
@@ -647,9 +647,9 @@ navbar-brand, a, a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  left: 55%;
-  top: 422%;
+  /* position: absolute; */
+  left: 45%;
+  bottom: -30px;
 }
 
 .footer__title {
