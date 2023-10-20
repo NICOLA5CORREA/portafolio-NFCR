@@ -249,7 +249,7 @@ button:hover i:nth-child(10) {
   background: #FFD34E;
   border: 0px;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   text-transform: uppercase;
   padding: 10px 40px;
   font-weight: normal;
@@ -263,7 +263,7 @@ button:hover i:nth-child(10) {
   -o-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  margin-top: 25px;
+  margin-top: 10px;
   border: 2px solid #FFD34E;
 }
 
