@@ -570,7 +570,7 @@ h3.txt-tl {
   flex-direction: column;
   align-content: center;
   position: relative;
-  left: 45%;
+  left: 10%;
 }
 
 navbar-brand, a, a:hover {
@@ -598,8 +598,8 @@ navbar-brand, a, a:hover {
 }
 
 .location-info p {
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 22px;
+  line-height: 40px;
   color: #000;
 }
 
@@ -629,8 +629,8 @@ navbar-brand, a, a:hover {
   padding: 0.5em;
   display: flex;
   position: relative;
-  top: -27px;
-  left: 20px;
+  top: -25px;
+  left: 35px;
 }
 
 .footer__list{
@@ -639,8 +639,8 @@ navbar-brand, a, a:hover {
   position: absolute;
   flex-direction: column;
   padding: 0.2em;
-  left:30px;
-  top:85%
+  top:85%;
+  font-size: 16px;
 }
 
 .footer-social {
@@ -648,7 +648,8 @@ navbar-brand, a, a:hover {
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 60%
+  left: 55%;
+  top: 422%;
 }
 
 .footer__title {
@@ -658,6 +659,7 @@ navbar-brand, a, a:hover {
 .social__networks {
   color: rgb(176, 176, 176);
   padding: 0.5em 0.5em;
+  margin: 0;
 }
 
 .footer-social a {
