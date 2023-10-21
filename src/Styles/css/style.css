@@ -333,6 +333,8 @@ p {
   height: 48px;
   width: 48px;
   float: left;
+  left: 0;
+  right: 0;
   margin-top: 14px;
   margin-bottom: 20px;
 }
