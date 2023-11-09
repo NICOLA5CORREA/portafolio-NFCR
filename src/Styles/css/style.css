@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-fixed-top {
-  padding: 40px 0;
+  padding: 10px 0;
   transition: all 0.5s;
 }
 .scrolled{
@@ -689,13 +689,14 @@ navbar-brand, a, a:hover {
   }
   .navbar-toggle {
     margin-top: 0px;
+    right: 5%;
   }
   .navbar-default .navbar-nav>li>a {
     text-align: center;
   }
 
   .typewrite {
-    font-size: 40px;
+    font-size: 20px;
   }
   .title {
     font-size: 50px;

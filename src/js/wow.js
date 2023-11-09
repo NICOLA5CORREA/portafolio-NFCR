@@ -1,37 +1,38 @@
 (function() {
-  var MutationObserver, Util, WeakMap,
-    __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
-    __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
-  Util = (function() {
-    function Util() {}
+  var MutationObserver, Util,
+  __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+  __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
-    Util.prototype.extend = function(custom, defaults) {
-      var key, value;
-      for (key in defaults) {
-        value = defaults[key];
-        if (custom[key] == null) {
-          custom[key] = value;
-        }
+Util = (function() {
+  function Util() {}
+
+  Util.prototype.extend = function(custom, defaults) {
+    var key, value;
+    for (key in defaults) {
+      value = defaults[key];
+      if (custom[key] == null) {
+        custom[key] = value;
       }
-      return custom;
-    };
+    }
+    return custom;
+  };
 
-    Util.prototype.isMobile = function(agent) {
-      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent);
-    };
+  Util.prototype.isMobile = function(agent) {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent);
+  };
 
-    return Util;
+  return Util;
 
-  })();
+})();
 
-  WeakMap = this.WeakMap || this.MozWeakMap || (WeakMap = (function() {
-    function WeakMap() {
+var WeakMap = this.WeakMap || this.MozWeakMap || (function() {
+  return class WeakMap {
+    constructor() {
       this.keys = [];
       this.values = [];
     }
-
-    WeakMap.prototype.get = function(key) {
+    get(key) {
       var i, item, _i, _len, _ref;
       _ref = this.keys;
       for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
@@ -40,9 +41,8 @@
           return this.values[i];
         }
       }
-    };
-
-    WeakMap.prototype.set = function(key, value) {
+    }
+    set(key, value) {
       var i, item, _i, _len, _ref;
       _ref = this.keys;
       for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
@@ -54,11 +54,9 @@
       }
       this.keys.push(key);
       return this.values.push(value);
-    };
-
-    return WeakMap;
-
-  })());
+    }
+  }
+}
 
   MutationObserver = this.MutationObserver || this.WebkitMutationObserver || this.MozMutationObserver || (MutationObserver = (function() {
     function MutationObserver() {
@@ -82,7 +80,13 @@
       mobile: true,
       live: true
     };
+    
+    function initializeWow(options) {
+      var wow = new WOW(options);
+      wow.init();
+    }
 
+    
     function WOW(options) {
       if (options == null) {
         options = {};
@@ -395,7 +399,9 @@
       return !this.config.mobile && this.util().isMobile(navigator.userAgent);
     };
 
-    return WOW;
+    return {
+      initialize: initializeWow
+      };;
 
   })();
   
