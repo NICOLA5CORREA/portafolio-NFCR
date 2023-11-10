@@ -26,7 +26,7 @@ Util = (function() {
 
 })();
 
-var WeakMap = this.WeakMap || this.MozWeakMap || (function() {
+var WeakMap = this.WeakMap || this.MozWeakMap || function() {
   return class WeakMap {
     constructor() {
       this.keys = [];
@@ -58,19 +58,21 @@ var WeakMap = this.WeakMap || this.MozWeakMap || (function() {
   }
 }
 
-  MutationObserver = this.MutationObserver || this.WebkitMutationObserver || this.MozMutationObserver || (MutationObserver = (function() {
+  MutationObserver = this.MutationObserver || this.WebkitMutationObserver || this.MozMutationObserver || (function() {
     function MutationObserver() {
       console.warn('MutationObserver is not supported by your browser.');
       console.warn('WOW.js cannot detect dom mutations, please call .sync() after loading new content.');
     }
-
+  
     MutationObserver.notSupported = true;
-
+  
     MutationObserver.prototype.observe = function() {};
-
+  
     return MutationObserver;
+  })();
+  
 
-  })());
+
 
   this.WOW = (function() {
     WOW.prototype.defaults = {
@@ -406,3 +408,4 @@ var WeakMap = this.WeakMap || this.MozWeakMap || (function() {
   })();
   
 }).call(this);
+
